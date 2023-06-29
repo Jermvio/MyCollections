@@ -3,15 +3,15 @@ public class MyStack <S> extends MyLinkedList <S> {
         add(value);
     }
 
-    public Object peek() {
+    public S peek() {
         if (size() != 0) {
             return lastNode.data;
         }
         return null;
     }
 
-    public Object pop() {
-        Object result = peek();
+    public S pop() {
+        S result = peek();
         remove(size() - 1);
         return result;
     }

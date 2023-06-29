@@ -1,12 +1,12 @@
 public class MyQueue <S> extends MyLinkedList<S> {
-    public Object peek() {
+    public S peek() {
         if (size != 0) {
             return firstNode.data;
         }
         return null;
     }
 
-    public Object poll() {
+    public S poll() {
         if (size != 0) {
             return remove(0);
         }

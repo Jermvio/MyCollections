@@ -20,7 +20,7 @@ public class MyLinkedList<S> {
         size++;
     }
 
-    public Object remove(int index) {
+    public S remove(int index) {
         if (index >= size || index < 0) {
             return null;
         }
@@ -47,7 +47,7 @@ public class MyLinkedList<S> {
         return neededNode.data;
     }
 
-    public Object get(int index) {
+    public S get(int index) {
         if (index >= size || index < 0) {
             return null;
         }
